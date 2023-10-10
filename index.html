@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <section class="input-area">
+            <input type="text" id = "text-input"/>
+            <button id ="add-button">+</button>
+        </section>
+        <section class="task-area">
+            <div class="task-tabs">
+                <div id="under-line"></div>
+                <div id="all">
+                    <a href="#" id="all">모두</a>
+                </div>
+                <div id="ongoing">
+                    <a href="#" id="ongoing">진행중</a>
+                </div>
+                <div id="done">
+                    <a href="#" id="done">완료</a>
+                </div>
+            </div>
+            <div id = "task-board">
+                
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

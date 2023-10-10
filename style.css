@@ -1,0 +1,54 @@
+body {
+    /* body에 margin이 8px로 기본값이 지정되어있어서 */
+    margin: 0; 
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    background-color: white;
+    min-height: 100vh; /* 100vh: 보는화면의 높이만큼(100%) */
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.task-area{
+    border:1px solid lightgray;
+}
+.task-tabs{
+    display: flex;
+    border-bottom:1px solid lightgray;
+    position: relative;
+}
+.task-tabs div{
+    padding: 1em;
+}
+/* task-tabs의 자식요소들중에 under-line에는 padding요소 따로적용하기 */
+.task-tabs #under-line{
+    padding: 0em;
+}
+#under-line{
+    position: absolute;
+    width: 0%;
+    background-color: aqua;
+    top:0px;
+    left:0px;
+    height: 4px;
+}
+.task{
+    display: flex;
+    justify-content: space-between; /*task블럭 내부의 div들의 사이 간격을 띄워놓는다 */
+    padding: 1em;
+}
+.task-done{
+    text-decoration: line-through;
+}
+
+/* .task-tabs div{
+    cursor:pointer;
+} */
+
+.task-tabs a{
+    text-decoration: none;
+    color: black;
+}
